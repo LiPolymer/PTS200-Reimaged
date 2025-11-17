@@ -1,6 +1,6 @@
 // Firmware version
-#define VERSION "v4.5.3" //20240130
-#define VERSION_NUM 422
+#define VERSION "Reimaged"
+#define VERSION_NUM 423
 
 // Type of MOSFET
 #define P_MOSFET // P_MOSFET or N_MOSFET
