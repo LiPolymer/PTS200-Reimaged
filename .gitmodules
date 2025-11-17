@@ -1,0 +1,3 @@
+[submodule "lib/XeonUI"]
+	path = lib/XeonUI
+	url = https://gitlab.com/LiPolymer/XeonUI.git
