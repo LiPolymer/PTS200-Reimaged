@@ -358,17 +358,17 @@ void ROTARYCheck() {
           while ((digitalRead(BUTTON_PIN)) && ((millis() - buttonmillis) < 200))
             delay(10);
           if ((millis() - buttonmillis) >= 200) {  // single click
-            if (inOffMode) {
-              inOffMode = false;
-            } else {
-              inBoostMode = !inBoostMode;
-              if (inBoostMode) {
-                boostmillis = millis();
-              }
-              handleMoved = true;
-            }
+              inOffMode = !inOffMode;
           } else {  // double click
-            inOffMode = true;
+              if (inOffMode) {
+                  inOffMode = false;
+              } else {
+                  inBoostMode = !inBoostMode;
+                  if (inBoostMode) {
+                      boostmillis = millis();
+                  }
+                  handleMoved = true;
+              }
           }
         }
       }
